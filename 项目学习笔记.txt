@@ -1,0 +1,25 @@
+1.build config 这两个目录是webpack配置相关
+2.node_modules 是通过npm安装的依赖
+3.src 是整个项目的源码 src下面有一个main.js是相应的入口文件 components 里面放的是组件
+4.static 是存放项目静态资源的 里面有一个.gitkeep文件的作用是当文件为空时把空文件夹提交到git上面
+5..babelrc 是babel的一些配置
+6..editorconfig 是编辑器的一些配置
+charset = utf-8   编码格式
+indent_style = space  缩进格式
+indent_size = 2  缩进个数
+end_of_line = lf  换行风格  linux换行风格
+insert_final_newline = true  创建文件在文件末尾插入一个新行
+trim_trailing_whitespace = true  自动移除行尾多行空格
+7..eslintignore 表示语法不检查的文件
+8..eslintrc.js 表示对js语法进行检测的
+9..gitignore 表示文件通过git进行提交的时候忽略里面配置的文件
+10. 入口页面文件
+11.package.json 项目的配置文件
+12.README.md 是项目的描述文件
+
+
+使用的时候对webstrom进行配置不然webstrom不识别.vue文件,需要安装一个插件 vuejs-plugin.jar
+1、index.html 入口文件  页面的入口js是src里的main.js
+
+1.用手机测试的时候必须连着同一个局域网
+2.如果webstrom不能使用terminal的命令行，在cmd中选择属性，把使用旧版本的控制台

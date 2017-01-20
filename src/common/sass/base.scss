@@ -1,0 +1,37 @@
+body,html{
+  line-height:1;
+  font-weight:200;
+  /*设置相应的字体，如果找不到就往后找，再找不到就用系统默认字体*/
+  font-family: 'PingFang SC','STHeitiSC-Light','Helvetica-Light',arial,sans-serif;
+}
+.clearfix{
+  display:inline-block;
+  &:after{
+    display:block;
+    content:'.';
+    height:0;
+    line-height:0;
+    clear:both;
+    visibility:hidden;
+  }
+}
+/*不同手机一像素边框处理*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  .border-1px{
+    &::after{
+      -webkit-transform:scaleY(0.7);
+      transform:scaleY(0.7);
+    }
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .border-1px{
+    &::after{
+      -webkit-transform:scaleY(0.5);
+      transform:scaleY(0.5);
+    }
+  }
+}
+[v-cloak] {
+  display: none;
+}
